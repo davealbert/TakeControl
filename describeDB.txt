@@ -1,0 +1,22 @@
+mysql> describe users;
++---------------+--------------+------+-----+-------------------+-----------------------------+
+| Field         | Type         | Null | Key | Default           | Extra                       |
++---------------+--------------+------+-----+-------------------+-----------------------------+
+| id            | int(11)      | NO   | PRI | NULL              | auto_increment              |
+| email         | varchar(200) | NO   |     |                   |                             |
+| password_hash | varchar(200) | NO   |     |                   |                             |
+| time_stamp    | timestamp    | NO   |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |
++---------------+--------------+------+-----+-------------------+-----------------------------+
+
+
+mysql> describe task_data;
++------------+-----------+------+-----+-------------------+-----------------------------+
+| Field      | Type      | Null | Key | Default           | Extra                       |
++------------+-----------+------+-----+-------------------+-----------------------------+
+| id         | int(11)   | NO   | PRI | NULL              | auto_increment              |
+| user_id    | int(11)   | NO   |     | NULL              |                             |
+| json_data  | text      | NO   |     | NULL              |                             |
+| time_stamp | timestamp | NO   |     | CURRENT_TIMESTAMP | on update CURRENT_TIMESTAMP |
++------------+-----------+------+-----+-------------------+-----------------------------+
+
+

@@ -16,3 +16,5 @@ profile
 *.moved-aside
 DerivedData
 .idea/
+sftp-config.json
+api/db.php
