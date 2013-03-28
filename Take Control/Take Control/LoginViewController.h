@@ -8,6 +8,24 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController
+@interface LoginViewController : UIViewController <UITextFieldDelegate>
+
+#pragma mark - Login View
+@property (strong, nonatomic) IBOutlet UITextField *emailField;
+@property (strong, nonatomic) IBOutlet UITextField *passwordField;
+
+- (IBAction)login:(id)sender;
+- (IBAction)showCreateNewUser:(id)sender;
+
+
+#pragma mark - Create New Account View
+@property (strong, nonatomic) IBOutlet UIView *createAccountView;
+@property (strong, nonatomic) IBOutlet UITextField *anewEmailField;
+@property (strong, nonatomic) IBOutlet UITextField *anewPasswordField;
+@property (strong, nonatomic) IBOutlet UITextField *confirmPasswordField;
+
+
+- (IBAction)createNewUser:(id)sender;
+- (IBAction)cancelNewUser:(id)sender;
 
 @end
