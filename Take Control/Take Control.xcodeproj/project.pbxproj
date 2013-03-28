@@ -19,6 +19,8 @@
 		505C7E9F1702DDE400F07336 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505C7E9E1702DDE400F07336 /* ViewController.m */; };
 		505C7EA21702DDE400F07336 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505C7EA01702DDE400F07336 /* ViewController_iPhone.xib */; };
 		505C7EA51702DDE400F07336 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505C7EA31702DDE400F07336 /* ViewController_iPad.xib */; };
+		50F7FB091704206C00C08691 /* control.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F7FB081704206C00C08691 /* control.png */; };
+		50F7FB0B1704225B00C08691 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F7FB0A1704225B00C08691 /* button.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -39,6 +41,8 @@
 		505C7E9E1702DDE400F07336 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
 		505C7EA11702DDE400F07336 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
 		505C7EA41702DDE400F07336 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		50F7FB081704206C00C08691 /* control.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = control.png; sourceTree = "<group>"; };
+		50F7FB0A1704225B00C08691 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -85,12 +89,8 @@
 		505C7E8B1702DDE300F07336 /* Take Control */ = {
 			isa = PBXGroup;
 			children = (
-				505C7E941702DDE300F07336 /* AppDelegate.h */,
-				505C7E951702DDE300F07336 /* AppDelegate.m */,
-				505C7E9D1702DDE400F07336 /* ViewController.h */,
-				505C7E9E1702DDE400F07336 /* ViewController.m */,
-				505C7EA01702DDE400F07336 /* ViewController_iPhone.xib */,
-				505C7EA31702DDE400F07336 /* ViewController_iPad.xib */,
+				50F7FB0F170427E300C08691 /* Classes */,
+				50F7FB0C170427CC00C08691 /* Resources */,
 				505C7E8C1702DDE300F07336 /* Supporting Files */,
 			);
 			path = "Take Control";
@@ -108,6 +108,60 @@
 				505C7E9B1702DDE400F07336 /* Default-568h@2x.png */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		50F7FB0C170427CC00C08691 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				50F7FB0D170427D600C08691 /* XIBs */,
+				50F7FB0E170427DD00C08691 /* Images */,
+			);
+			name = Resources;
+			sourceTree = "<group>";
+		};
+		50F7FB0D170427D600C08691 /* XIBs */ = {
+			isa = PBXGroup;
+			children = (
+				505C7EA01702DDE400F07336 /* ViewController_iPhone.xib */,
+				505C7EA31702DDE400F07336 /* ViewController_iPad.xib */,
+			);
+			name = XIBs;
+			sourceTree = "<group>";
+		};
+		50F7FB0E170427DD00C08691 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				50F7FB081704206C00C08691 /* control.png */,
+				50F7FB0A1704225B00C08691 /* button.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
+		50F7FB0F170427E300C08691 /* Classes */ = {
+			isa = PBXGroup;
+			children = (
+				50F7FB10170427ED00C08691 /* App */,
+				50F7FB11170427F400C08691 /* ViewControllers */,
+			);
+			name = Classes;
+			sourceTree = "<group>";
+		};
+		50F7FB10170427ED00C08691 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				505C7E941702DDE300F07336 /* AppDelegate.h */,
+				505C7E951702DDE300F07336 /* AppDelegate.m */,
+			);
+			name = App;
+			sourceTree = "<group>";
+		};
+		50F7FB11170427F400C08691 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				505C7E9D1702DDE400F07336 /* ViewController.h */,
+				505C7E9E1702DDE400F07336 /* ViewController.m */,
+			);
+			name = ViewControllers;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -167,6 +221,8 @@
 				505C7E9C1702DDE400F07336 /* Default-568h@2x.png in Resources */,
 				505C7EA21702DDE400F07336 /* ViewController_iPhone.xib in Resources */,
 				505C7EA51702DDE400F07336 /* ViewController_iPad.xib in Resources */,
+				50F7FB091704206C00C08691 /* control.png in Resources */,
+				50F7FB0B1704225B00C08691 /* button.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -312,6 +368,7 @@
 				505C7EAA1702DDE400F07336 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
