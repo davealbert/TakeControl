@@ -16,9 +16,9 @@
 		505C7E981702DDE300F07336 /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 505C7E971702DDE300F07336 /* Default.png */; };
 		505C7E9A1702DDE300F07336 /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 505C7E991702DDE300F07336 /* Default@2x.png */; };
 		505C7E9C1702DDE400F07336 /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 505C7E9B1702DDE400F07336 /* Default-568h@2x.png */; };
-		505C7E9F1702DDE400F07336 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505C7E9E1702DDE400F07336 /* ViewController.m */; };
-		505C7EA21702DDE400F07336 /* ViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505C7EA01702DDE400F07336 /* ViewController_iPhone.xib */; };
-		505C7EA51702DDE400F07336 /* ViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505C7EA31702DDE400F07336 /* ViewController_iPad.xib */; };
+		505C7E9F1702DDE400F07336 /* LoginViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 505C7E9E1702DDE400F07336 /* LoginViewController.m */; };
+		505C7EA21702DDE400F07336 /* LoginViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505C7EA01702DDE400F07336 /* LoginViewController_iPhone.xib */; };
+		505C7EA51702DDE400F07336 /* LoginViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505C7EA31702DDE400F07336 /* LoginViewController_iPad.xib */; };
 		50F7FB091704206C00C08691 /* control.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F7FB081704206C00C08691 /* control.png */; };
 		50F7FB0B1704225B00C08691 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F7FB0A1704225B00C08691 /* button.png */; };
 /* End PBXBuildFile section */
@@ -37,10 +37,10 @@
 		505C7E971702DDE300F07336 /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = Default.png; sourceTree = "<group>"; };
 		505C7E991702DDE300F07336 /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default@2x.png"; sourceTree = "<group>"; };
 		505C7E9B1702DDE400F07336 /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "Default-568h@2x.png"; sourceTree = "<group>"; };
-		505C7E9D1702DDE400F07336 /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		505C7E9E1702DDE400F07336 /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		505C7EA11702DDE400F07336 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPhone.xib; sourceTree = "<group>"; };
-		505C7EA41702DDE400F07336 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/ViewController_iPad.xib; sourceTree = "<group>"; };
+		505C7E9D1702DDE400F07336 /* LoginViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = LoginViewController.h; sourceTree = "<group>"; };
+		505C7E9E1702DDE400F07336 /* LoginViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = LoginViewController.m; sourceTree = "<group>"; };
+		505C7EA11702DDE400F07336 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LoginViewController_iPhone.xib; sourceTree = "<group>"; };
+		505C7EA41702DDE400F07336 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LoginViewController_iPad.xib; sourceTree = "<group>"; };
 		50F7FB081704206C00C08691 /* control.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = control.png; sourceTree = "<group>"; };
 		50F7FB0A1704225B00C08691 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -122,8 +122,8 @@
 		50F7FB0D170427D600C08691 /* XIBs */ = {
 			isa = PBXGroup;
 			children = (
-				505C7EA01702DDE400F07336 /* ViewController_iPhone.xib */,
-				505C7EA31702DDE400F07336 /* ViewController_iPad.xib */,
+				505C7EA01702DDE400F07336 /* LoginViewController_iPhone.xib */,
+				505C7EA31702DDE400F07336 /* LoginViewController_iPad.xib */,
 			);
 			name = XIBs;
 			sourceTree = "<group>";
@@ -158,8 +158,8 @@
 		50F7FB11170427F400C08691 /* ViewControllers */ = {
 			isa = PBXGroup;
 			children = (
-				505C7E9D1702DDE400F07336 /* ViewController.h */,
-				505C7E9E1702DDE400F07336 /* ViewController.m */,
+				505C7E9D1702DDE400F07336 /* LoginViewController.h */,
+				505C7E9E1702DDE400F07336 /* LoginViewController.m */,
 			);
 			name = ViewControllers;
 			sourceTree = "<group>";
@@ -219,8 +219,8 @@
 				505C7E981702DDE300F07336 /* Default.png in Resources */,
 				505C7E9A1702DDE300F07336 /* Default@2x.png in Resources */,
 				505C7E9C1702DDE400F07336 /* Default-568h@2x.png in Resources */,
-				505C7EA21702DDE400F07336 /* ViewController_iPhone.xib in Resources */,
-				505C7EA51702DDE400F07336 /* ViewController_iPad.xib in Resources */,
+				505C7EA21702DDE400F07336 /* LoginViewController_iPhone.xib in Resources */,
+				505C7EA51702DDE400F07336 /* LoginViewController_iPad.xib in Resources */,
 				50F7FB091704206C00C08691 /* control.png in Resources */,
 				50F7FB0B1704225B00C08691 /* button.png in Resources */,
 			);
@@ -235,7 +235,7 @@
 			files = (
 				505C7E921702DDE300F07336 /* main.m in Sources */,
 				505C7E961702DDE300F07336 /* AppDelegate.m in Sources */,
-				505C7E9F1702DDE400F07336 /* ViewController.m in Sources */,
+				505C7E9F1702DDE400F07336 /* LoginViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -250,20 +250,20 @@
 			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
-		505C7EA01702DDE400F07336 /* ViewController_iPhone.xib */ = {
+		505C7EA01702DDE400F07336 /* LoginViewController_iPhone.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				505C7EA11702DDE400F07336 /* en */,
 			);
-			name = ViewController_iPhone.xib;
+			name = LoginViewController_iPhone.xib;
 			sourceTree = "<group>";
 		};
-		505C7EA31702DDE400F07336 /* ViewController_iPad.xib */ = {
+		505C7EA31702DDE400F07336 /* LoginViewController_iPad.xib */ = {
 			isa = PBXVariantGroup;
 			children = (
 				505C7EA41702DDE400F07336 /* en */,
 			);
-			name = ViewController_iPad.xib;
+			name = LoginViewController_iPad.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
