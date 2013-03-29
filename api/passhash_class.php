@@ -9,7 +9,8 @@ class PassHash {
   private static $cost = '$10';
   // mainly for internal use
   public static function unique_salt() {
-    return substr(sha1(mt_rand()),0,22);
+    // return substr(sha1(mt_rand()),0,22);
+    return substr(sha1(openssl_random_pseudo_bytes(23, $cstrong)),0,22);
   }
 
   // this will be used to generate a hash
