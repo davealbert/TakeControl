@@ -22,7 +22,7 @@
 - (void)viewDidLoad {
   [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
-
+  [self.loggingInView setHidden:YES];
   [self verticalHide:self.createAccountView];
 }
 
@@ -35,6 +35,15 @@
 
 - (IBAction)login:(id)sender {
   NSLog(@"email: %@, password: %@",self.emailField.text, self.passwordField.text);
+  if ([self.emailField.text length]>0 && [self.passwordField.text length]>0) {
+    [self.view addSubview:self.loggingInView];
+    [self.loggingInView setHidden:NO];
+    // TODO: Start login
+    [self.passwordField becomeFirstResponder];
+    [self.passwordField resignFirstResponder];
+  } else {
+    [[[UIAlertView alloc] initWithTitle:@"Error" message:@"Please enter a username and password." delegate:nil cancelButtonTitle:@"OK" otherButtonTitles: nil] show];
+  }
 }
 
 - (IBAction)showCreateNewUser:(id)sender {
@@ -42,10 +51,15 @@
   [self.anewEmailField setText:self.emailField.text];
   [self.anewPasswordField setText:self.passwordField.text];
   [self.confirmPasswordField setText:@""];
-  
+
   // Show new user view
   [self.view addSubview:self.createAccountView];
   [self verticalShow:self.createAccountView];
+}
+
+- (IBAction)cancelLoggingIn:(id)sender {
+  [self.loggingInView setHidden:YES];
+  // TODO: Cancel login
 }
 
 - (IBAction)createNewUser:(id)sender {

@@ -21,6 +21,7 @@
 		505C7EA51702DDE400F07336 /* LoginViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 505C7EA31702DDE400F07336 /* LoginViewController_iPad.xib */; };
 		50F7FB091704206C00C08691 /* control.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F7FB081704206C00C08691 /* control.png */; };
 		50F7FB0B1704225B00C08691 /* button.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F7FB0A1704225B00C08691 /* button.png */; };
+		50F7FB4217058ADC00C08691 /* alertMask copy.png in Resources */ = {isa = PBXBuildFile; fileRef = 50F7FB4117058ADC00C08691 /* alertMask copy.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -43,6 +44,7 @@
 		505C7EA41702DDE400F07336 /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = en.lproj/LoginViewController_iPad.xib; sourceTree = "<group>"; };
 		50F7FB081704206C00C08691 /* control.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = control.png; sourceTree = "<group>"; };
 		50F7FB0A1704225B00C08691 /* button.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = button.png; sourceTree = "<group>"; };
+		50F7FB4117058ADC00C08691 /* alertMask copy.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = "alertMask copy.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -133,6 +135,7 @@
 			children = (
 				50F7FB081704206C00C08691 /* control.png */,
 				50F7FB0A1704225B00C08691 /* button.png */,
+				50F7FB4117058ADC00C08691 /* alertMask copy.png */,
 			);
 			name = Images;
 			sourceTree = "<group>";
@@ -223,6 +226,7 @@
 				505C7EA51702DDE400F07336 /* LoginViewController_iPad.xib in Resources */,
 				50F7FB091704206C00C08691 /* control.png in Resources */,
 				50F7FB0B1704225B00C08691 /* button.png in Resources */,
+				50F7FB4217058ADC00C08691 /* alertMask copy.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

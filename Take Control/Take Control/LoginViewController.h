@@ -8,7 +8,9 @@
 
 #import <UIKit/UIKit.h>
 
-@interface LoginViewController : UIViewController <UITextFieldDelegate>
+@interface LoginViewController : UIViewController <UITextFieldDelegate, NSURLConnectionDelegate, NSURLConnectionDataDelegate> {
+  NSURLConnection *loginConnection;
+}
 
 #pragma mark - Login View
 @property (strong, nonatomic) IBOutlet UITextField *emailField;
@@ -16,6 +18,11 @@
 
 - (IBAction)login:(id)sender;
 - (IBAction)showCreateNewUser:(id)sender;
+
+
+#pragma mark - Logging in View
+@property (strong, nonatomic) IBOutlet UIView *loggingInView;
+- (IBAction)cancelLoggingIn:(id)sender;
 
 
 #pragma mark - Create New Account View
