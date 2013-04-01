@@ -18,3 +18,4 @@ DerivedData
 .idea/
 sftp-config.json
 api/db.php
+image-backup/*
