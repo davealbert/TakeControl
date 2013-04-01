@@ -62,6 +62,14 @@
   // TODO: Cancel login
 }
 
+- (IBAction)workOffline:(id)sender {
+  NSLog(@"workOffline");
+}
+
+- (IBAction)infoWorkOffline:(id)sender {
+  NSLog(@"infoWorkOffline");
+}
+
 - (IBAction)createNewUser:(id)sender {
   if (![self.anewPasswordField.text isEqual:self.confirmPasswordField.text]) {
     // Passwords do not match

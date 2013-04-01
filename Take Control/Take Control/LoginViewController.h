@@ -19,10 +19,14 @@
 - (IBAction)login:(id)sender;
 - (IBAction)showCreateNewUser:(id)sender;
 
+- (IBAction)workOffline:(id)sender;
+- (IBAction)infoWorkOffline:(id)sender;
 
 #pragma mark - Logging in View
 @property (strong, nonatomic) IBOutlet UIView *loggingInView;
 - (IBAction)cancelLoggingIn:(id)sender;
+
+
 
 
 #pragma mark - Create New Account View
