@@ -23,6 +23,8 @@
   [super viewDidLoad];
 	// Do any additional setup after loading the view, typically from a nib.
   [self.loggingInView setHidden:YES];
+
+  [self verticalHide:self.offlineInfoView];
   [self verticalHide:self.createAccountView];
 }
 
@@ -53,7 +55,6 @@
   [self.confirmPasswordField setText:@""];
 
   // Show new user view
-  [self.view addSubview:self.createAccountView];
   [self verticalShow:self.createAccountView];
 }
 
@@ -67,7 +68,7 @@
 }
 
 - (IBAction)infoWorkOffline:(id)sender {
-  NSLog(@"infoWorkOffline");
+  [self verticalShow:self.offlineInfoView];
 }
 
 - (IBAction)createNewUser:(id)sender {
@@ -84,9 +85,14 @@
   [self verticalHide:self.createAccountView];
 }
 
+- (IBAction)offlineInfoOK:(id)sender {
+  [self verticalHide:self.offlineInfoView];
+}
+
 #pragma mark - Supporting  Methods
 
 - (void)verticalShow:(UIView *)view {
+  [self.view addSubview:view];
   [UIView animateWithDuration:VERTICAL_ANIMATION_SPEED animations:^{
     [view setFrame:CGRectMake(0.0f, 0.0f, view.frame.size.width, view.frame.size.height)];
   }];
@@ -94,6 +100,8 @@
 - (void)verticalHide:(UIView *)view {
   [UIView animateWithDuration:VERTICAL_ANIMATION_SPEED animations:^{
     [view setFrame:CGRectMake(0.0f, view.frame.size.height + 10.0f,view.frame.size.width, view.frame.size.height)];
+  } completion:^(BOOL finished) {
+    [view removeFromSuperview];
   }];
 }
 
@@ -104,5 +112,6 @@
   [textField resignFirstResponder];
   return YES;
 }
+
 
 @end

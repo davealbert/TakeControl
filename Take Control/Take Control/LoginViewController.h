@@ -22,6 +22,13 @@
 - (IBAction)workOffline:(id)sender;
 - (IBAction)infoWorkOffline:(id)sender;
 
+
+#pragma mark - Work Offline Info View
+@property (strong, nonatomic) IBOutlet UIView *offlineInfoView;
+- (IBAction)offlineInfoOK:(id)sender;
+
+
+
 #pragma mark - Logging in View
 @property (strong, nonatomic) IBOutlet UIView *loggingInView;
 - (IBAction)cancelLoggingIn:(id)sender;
